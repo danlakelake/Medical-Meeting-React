@@ -1,22 +1,26 @@
 import { useState } from 'react';
 import logo from '../assets/medical-meeting-logo.svg';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log(isMenuOpen);
 
   return (
     <header>
-      <nav className="flex items-center justify-between p-8 shadow-lg">
+      <nav className="flex flex-wrap items-center justify-between p-8 shadow-lg">
         <a href="#" className="flex items-center gap-3 text-primary">
           <img src={logo} alt="Medical Meeting" className="w-10 h-10" />
           <span>Medical Meeting</span>
         </a>
-        <button className="md:hidden text-primary">
-          <Menu size={30}/>
+        <button 
+        className="md:hidden text-primary cursor-pointer transition-transform duration-300"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
-        <ul className="hidden md:flex gap-8 text-primary">
+        <ul className={`${isMenuOpen ? 'flex' : 'hidden'} flex-col w-full md:flex md:flex-row md:w-auto gap-5 text-primary mt-5`}>
           <li>
             <a href="#">Inicio</a>
           </li>
