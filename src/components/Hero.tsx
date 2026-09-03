@@ -1,15 +1,13 @@
 import heroDoctor from '../assets/hero-doctor.png';
+import Brands from './Brands';
 
 function Hero() {
   return (
     <section>
-      <div className="flex flex-col md:flex-row bg-gray-100 items-center h-auto md:h-[500px] lg:h-[600px]">
+      <div className="flex flex-col md:flex-row items-center h-auto md:h-[500px] lg:h-[600px]">
         <div className="w-full md:w-[60%] flex justify-center p-7 px-30 md:px-0">
           <div className="text-center md:text-left space-y-4">
-            <h1
-              className="text-5xl font-medium">
-              Medical Meeting
-            </h1>
+            <h1 className="text-5xl font-medium">Medical Meeting</h1>
             <p>
               <span className="font-bold">La red de médicos</span> <br />
               <span className="text-primary">
@@ -29,6 +27,7 @@ function Hero() {
           />
         </div>
       </div>
+      <Brands/>
     </section>
   );
 }
