@@ -7,7 +7,8 @@
   --color-secondary: #00bcff;
   --color-tertiary: #8ec5ff;
   --color-light: #51a2ff;
-  --color-gray-brands: #99a1af
+  --color-gray-brands: #99a1af;
+  --color-gray-texts: #7d8591;
 }
 
 * {
@@ -18,10 +19,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Default Button */
-.btn-primary {
-  @apply px-15 
-  py-2 border
+/* Default Buttons */
+.btn-primary,
+.btn-secondary {
+  @apply py-2
+  border
   border-primary
   rounded 
   font-bold
@@ -32,22 +34,34 @@ body {
   overflow-hidden;
 }
 
-.btn-primary:hover {
+.btn-primary {
+  @apply px-15;
+}
+
+.btn-secondary {
+  @apply px-10;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
   @apply border-transparent;
 }
 
-.btn-primary::before {
+.btn-primary::before,
+.btn-secondary::before {
   content: '';
   @apply absolute inset-y-0 left-0 w-full bg-light;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
 }
 
-.btn-primary:hover::before {
+.btn-primary:hover::before,
+.btn-secondary:hover::before {
   transform: translateX(0);
 }
 
-.btn-primary:hover span {
+.btn-primary:hover span,
+.btn-secondary:hover span {
   @apply text-white;
 }
 
@@ -59,4 +73,14 @@ nav ul li {
 nav ul li:hover {
   color: var(--color-secondary);
   transition: 0.3s;
+}
+
+/* Default Paragraphs */
+.paragraphs {
+  @apply text-base text-gray-texts text-justify;
+}
+
+/* Default Sections */
+.section-padding {
+  @apply px-10 md:px-0;
 }

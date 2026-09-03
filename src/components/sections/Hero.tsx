@@ -1,5 +1,5 @@
-import heroDoctor from '../assets/hero-doctor.png';
-import Brands from './Brands';
+import heroDoctor from '../../assets/hero-doctor.png';
+import Brands from '../Brands';
 
 function Hero() {
   return (
@@ -27,7 +27,7 @@ function Hero() {
           />
         </div>
       </div>
-      <Brands/>
+      <Brands />
     </section>
   );
 }

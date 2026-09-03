@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import Hero from "./components/Hero";
+import {Hero, About} from "./components/sections";
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
     <>
     <Header/>
     <Hero/>
+    <About/>
     </>
   )
 }
