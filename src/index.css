@@ -7,10 +7,12 @@
   --color-secondary: #00bcff;
   --color-tertiary: #8ec5ff;
   --color-light: #51a2ff;
+  --color-blue-sections: #c2dfff;
   --color-gray-brands: #99a1af;
   --color-gray-texts: #7d8591;
 }
 
+/* Defaults */
 * {
   box-sizing: border-box;
 }
@@ -28,6 +30,7 @@ body {
   rounded 
   font-bold
   text-base
+  font-ca
   text-primary
   cursor-pointer
   relative
@@ -75,12 +78,29 @@ nav ul li:hover {
   transition: 0.3s;
 }
 
-/* Default Paragraphs */
-.paragraphs {
-  @apply text-base text-gray-texts text-justify;
+/* Sections */
+.section-padding {
+  @apply px-10 md:px-20;
 }
 
-/* Default Sections */
-.section-padding {
-  @apply px-10 md:px-0;
+.section-container {
+  @apply max-w-7xl mx-auto;
+}
+
+.section-title {
+  @apply text-5xl font-medium pb-3;
+}
+
+.section-title-line {
+  @apply relative w-40 h-0.5 bg-primary mb-5;
+}
+
+.section-title-line::before {
+  content: '';
+  @apply absolute -left-1 top-1/2 w-2 h-2 rounded-full bg-primary;
+  transform: translateY(-50%);
+}
+
+.section-paragraph {
+  @apply text-base text-gray-texts text-justify;
 }

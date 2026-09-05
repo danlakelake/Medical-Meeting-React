@@ -2,8 +2,8 @@ import aboutDoctor from '../../assets/about-doctor.png';
 
 function About() {
   return (
-    <section className='section-padding'>
-      <div className="flex flex-col md:flex-row pt-0 md:pt-50 lg:pt-20 pb-20 md:pb-20 lg:pb-0">
+    <section className="section-padding">
+      <div className="section-container flex flex-col md:flex-row pt-0 md:pt-50 lg:pt-20 pb-20 md:pb-20 lg:pb-0">
         {/* Imagen */}
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
           <img
@@ -15,13 +15,10 @@ function About() {
         {/* Contenido */}
         <div className="w-full md:w-1/2 pl-0 pr-8 flex flex-col justify-center items-center md:items-start text-center md:text-left">
           <div className="max-w-lg flex flex-col items-center md:items-start">
-            <h2 className="text-5xl font-medium pb-2">Quienes Somos</h2>
+            <h2 className="section-title">Quienes Somos</h2>
             <div className="mt-2 space-y-6">
-              <div className="flex items-center justify-center md:justify-start">
-                <span className="w-2 h-2 rounded-full bg-primary"></span>
-                <span className="w-40 h-0.5 bg-primary"></span>
-              </div>
-              <p className="paragraphs">
+              <div className="section-title-line"></div>
+              <p className="section-paragraph">
                 Medical Meeting es una red que conecta a pacientes con médicos y
                 especialistas reconocidos, facilitando el acceso a información
                 profesional y servicios de salud de confianza. Nuestro objetivo
@@ -29,7 +26,7 @@ function About() {
                 trayectoria de cada especialista puedan ser conocidas de manera
                 clara.
               </p>
-              <p className="paragraphs">
+              <p className="section-paragraph">
                 Ayudamos a las personas a encontrar especialistas de confianza y
                 tomar mejores decisiones sobre su atención médica.
               </p>
@@ -39,7 +36,7 @@ function About() {
                   <span className="relative z-10">Información</span>
                 </button>
                 <button className="btn-secondary">
-                  <span className="relative z-10">Resume</span>
+                  <span className="relative z-10">Acerca De</span>
                 </button>
               </div>
             </div>

@@ -5,9 +5,10 @@ function Hero() {
   return (
     <section>
       <div className="flex flex-col md:flex-row items-center h-auto md:h-[500px] lg:h-[600px]">
+        {/* Contenido & CTA */}
         <div className="w-full md:w-[60%] flex justify-center p-7 px-30 md:px-0">
           <div className="text-center md:text-left space-y-4">
-            <h1 className="text-5xl font-medium">Medical Meeting</h1>
+            <h1 className="section-title">Medical Meeting</h1>
             <p>
               <span className="font-bold">La red de médicos</span> <br />
               <span className="text-primary">
@@ -19,6 +20,7 @@ function Hero() {
             </button>
           </div>
         </div>
+        {/* Imagen */}
         <div className="w-full md:w-[50%] lg:w-[40%] bg-tertiary md:relative h-full pt-7 md:px-0">
           <img
             src={heroDoctor}
