@@ -1,4 +1,4 @@
-import heroDoctor from '../../assets/hero-doctor.png';
+import heroDoctor from '../../assets/hero-doctor.avif';
 import Brands from '../Brands';
 
 function Hero() {

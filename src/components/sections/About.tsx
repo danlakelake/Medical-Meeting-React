@@ -1,4 +1,4 @@
-import aboutDoctor from '../../assets/about-doctor.png';
+import aboutDoctor from '../../assets/about-doctor.avif';
 
 function About() {
   return (
