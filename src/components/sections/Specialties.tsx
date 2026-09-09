@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import cardiology from '../../assets/specialties/cardiology.avif';
 import neurology from '../../assets/specialties/neurology.avif';
 import pediatrics from '../../assets/specialties/pediatrics.avif';
@@ -7,7 +8,6 @@ import orthopedics from '../../assets/specialties/orthopedics.avif';
 import gynecology from '../../assets/specialties/gynecology.avif';
 import ophthalmology from '../../assets/specialties/ophthalmology.avif';
 import internalMedicine from '../../assets/specialties/internal-medicine.avif';
-import { useState } from 'react';
 
 function Specialties() {
   const categories = [
@@ -38,7 +38,7 @@ function Specialties() {
       : specialties.filter((specialty) => specialty.name === selectedCategory);
 
   return (
-    <section className="section-padding bg-blue-sections py-20">
+    <section className="section-padding bg-blue-sections">
       <div className="section-container">
         {/* Encabezado */}
         <div>

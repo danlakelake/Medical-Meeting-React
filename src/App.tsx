@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import {Hero, About, Specialties} from "./components/sections";
+import {Hero, About, Specialties, Testimonial} from "./components/sections";
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
     <Hero/>
     <About/>
     <Specialties/>
+    <Testimonial/>
     </>
   )
 }

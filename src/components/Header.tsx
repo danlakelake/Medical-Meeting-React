@@ -31,7 +31,10 @@ function Header() {
             <a href="#">Especialidades</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#">Testimonios</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
           </li>
         </ul>
       </nav>

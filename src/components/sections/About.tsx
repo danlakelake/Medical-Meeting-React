@@ -2,8 +2,8 @@ import aboutDoctor from '../../assets/about-doctor.avif';
 
 function About() {
   return (
-    <section className="section-padding">
-      <div className="section-container flex flex-col md:flex-row pt-0 md:pt-50 lg:pt-20 pb-20 md:pb-20 lg:pb-0">
+    <section className="section-padding-secondary">
+      <div className="section-container-secondary">
         {/* Imagen */}
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
           <img

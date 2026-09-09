@@ -4,7 +4,7 @@ import Brands from '../Brands';
 function Hero() {
   return (
     <section>
-      <div className="flex flex-col md:flex-row items-center h-auto md:h-[500px] lg:h-[600px]">
+      <div className="hero-container">
         {/* Contenido & CTA */}
         <div className="w-full md:w-[60%] flex justify-center p-7 px-30 md:px-0">
           <div className="text-center md:text-left space-y-4">
@@ -21,11 +21,11 @@ function Hero() {
           </div>
         </div>
         {/* Imagen */}
-        <div className="w-full md:w-[50%] lg:w-[40%] bg-tertiary md:relative h-full pt-7 md:px-0">
+        <div className="hero-image-container bg-tertiary">
           <img
             src={heroDoctor}
             alt="Médico"
-            className="w-[60%] md:w-[550px] translate-x-12 md:absolute md:-left-50 lg:-left-60 md:bottom-0 drop-shadow-2xl"
+            className="hero-image"
           />
         </div>
       </div>

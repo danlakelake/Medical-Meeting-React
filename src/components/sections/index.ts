@@ -1,3 +1,4 @@
 export { default as Hero } from './Hero';
 export { default as About } from './About';
 export { default as Specialties } from './Specialties';
+export { default as Testimonial } from './Testimonial';
