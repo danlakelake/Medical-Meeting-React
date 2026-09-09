@@ -159,22 +159,6 @@ nav ul li:hover {
   @apply w-full h-60 rounded-sm object-cover;
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.8s ease-out;
-}
-
 /* Testimonials */
 .testimonial-container {
   @apply flex flex-col items-center;

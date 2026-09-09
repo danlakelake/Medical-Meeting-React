@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import cardiology from '../../assets/specialties/cardiology.avif';
 import neurology from '../../assets/specialties/neurology.avif';
 import pediatrics from '../../assets/specialties/pediatrics.avif';
@@ -70,15 +71,17 @@ function Specialties() {
             {/* Galería */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 pt-5 md:pt-15">
-            {filteredSpecialties.map((specialty) => (
-              <div key={specialty.image} className="animate-fade-in">
-                <img
-                  src={specialty.image}
-                  alt={specialty.name}
-                  className="grid-images"
-                />
-              </div>
-            ))}
+            <AnimatePresence>
+              {filteredSpecialties.map((specialty) => (
+                <motion.div key={specialty.image} layout transition={{ duration: 0.5 }}>
+                  <img
+                    src={specialty.image}
+                    alt={specialty.name}
+                    className="grid-images"
+                  />
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
         </div>
       </div>
