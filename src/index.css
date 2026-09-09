@@ -159,7 +159,6 @@ nav ul li:hover {
   @apply w-full h-60 rounded-sm object-cover;
 }
 
-/* Fades */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -177,10 +176,27 @@ nav ul li:hover {
 }
 
 /* Testimonials */
-.testimonial-img-container {
-  @apply flex flex-col items-center text-center;
+.testimonial-container {
+  @apply flex flex-col items-center;
 }
 
 .testimonial-image {
   @apply w-32 h-32 rounded-full object-cover;
+}
+
+@keyframes testimonial-fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-testimonial {
+  @apply flex flex-col items-center text-center;
+  animation: testimonial-fade 0.99s ease-out;
 }
