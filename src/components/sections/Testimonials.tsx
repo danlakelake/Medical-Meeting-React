@@ -35,7 +35,7 @@ function Testimonial() {
             <img
               src={testimonial.image}
               alt={testimonial.name}
-              className="testimonial-image mb-3"
+              className="testimonial-image mb-3 border-4 border-blue-sections"
             />
             <h3>{testimonial.name}</h3>
             <div className="flex gap-1 mt-2 text-yellow-400">

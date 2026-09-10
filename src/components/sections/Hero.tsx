@@ -3,7 +3,7 @@ import Brands from '../Brands';
 
 function Hero() {
   return (
-    <section>
+    <section id="hero">
       <div className="hero-container">
         {/* Contenido & CTA */}
         <div className="w-full md:w-[60%] flex justify-center p-7 px-30 md:px-0">
