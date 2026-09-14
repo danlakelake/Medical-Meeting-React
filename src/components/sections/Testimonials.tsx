@@ -11,21 +11,30 @@ function Testimonial() {
     {
       name: 'Fanny Spencer',
       image: testimonialDr1,
+      rating: 5,
       text: 'Como profesionales de la salud, debemos estar siempre comprometidos con nuestros pacientes y brindarles la mejor atención posible.',
     },
     {
       name: 'Sarah Williams',
       image: testimonialDr2,
+      rating: 5,
       text: 'Encontrar profesionales confiables es fundamental para recibir una atención médica de calidad.',
     },
     {
       name: 'Michael Anderson',
       image: testimonialDr3,
+      rating: 5,
       text: 'La experiencia y el compromiso de nuestros especialistas hacen la diferencia para nuestros pacientes.',
     },
   ];
 
   const testimonial = testimonials[currentTestimonial];
+
+  function renderStars(rating: number) {
+    return Array.from({ length: rating }).map(() => (
+      <Star size={18} fill="currentColor" />
+    ));
+  }
 
   return (
     <section className="section-padding">
@@ -39,11 +48,7 @@ function Testimonial() {
             />
             <h3>{testimonial.name}</h3>
             <div className="flex gap-1 mt-2 text-yellow-400">
-              <Star size={18} fill="currentColor" />
-              <Star size={18} fill="currentColor" />
-              <Star size={18} fill="currentColor" />
-              <Star size={18} fill="currentColor" />
-              <Star size={18} fill="currentColor" />
+             {renderStars(testimonial.rating)}
             </div>
             <p className="section-paragraph max-w-xl mt-5 text-center!">
               {testimonial.text}
