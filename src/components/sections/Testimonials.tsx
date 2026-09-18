@@ -31,8 +31,8 @@ function Testimonial() {
   const testimonial = testimonials[currentTestimonial];
 
   function renderStars(rating: number) {
-    return Array.from({ length: rating }).map(() => (
-      <Star size={18} fill="currentColor" />
+    return Array.from({ length: rating }).map((_, index) => (
+      <Star key={index} size={18} fill="currentColor" />
     ));
   }
 

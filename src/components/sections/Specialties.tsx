@@ -61,6 +61,7 @@ function Specialties() {
             <div className="flex flex-wrap gap-5 md:gap-8 items-center py-7 lg:py-0">
               {categories.map((category) => (
                 <button
+                  key={category}
                   className={`cursor-pointer ${selectedCategory === category ? 'text-primary font-semibold' : ''}`}
                   onClick={() => setSelectedCategory(category)}
                 >
@@ -73,7 +74,11 @@ function Specialties() {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 pt-5 md:pt-15">
             <AnimatePresence>
               {filteredSpecialties.map((specialty) => (
-                <motion.div key={specialty.image} layout transition={{ duration: 0.5 }}>
+                <motion.div
+                  key={specialty.image}
+                  layout
+                  transition={{ duration: 0.25 }}
+                >
                   <img
                     src={specialty.image}
                     alt={specialty.name}

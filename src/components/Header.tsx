@@ -5,7 +5,6 @@ import { Menu, X } from 'lucide-react';
 function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen);
 
   return (
     <header>
