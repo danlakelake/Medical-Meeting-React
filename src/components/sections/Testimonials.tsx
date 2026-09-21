@@ -47,7 +47,7 @@ function Testimonial() {
   }
 
   return (
-    <section className="section-padding">
+    <section id="testimonials" className="section-padding">
       <div className="section-container">
         <div className="testimonial-container">
           <div className="animate-testimonial" key={currentTestimonial}>

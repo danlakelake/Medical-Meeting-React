@@ -21,19 +21,22 @@ function Header() {
         </button>
         <ul className={`${isMenuOpen ? 'flex' : 'hidden'} flex-col w-full md:flex md:flex-row md:w-auto gap-5 text-primary mt-5`}>
           <li>
-            <a href="#">Inicio</a>
+            <a href="#home">Inicio</a>
           </li>
           <li>
-            <a href="#">Quienes Somos</a>
+            <a href="#about">Quienes Somos</a>
           </li>
           <li>
-            <a href="#">Especialidades</a>
+            <a href="#specialties">Especialidades</a>
           </li>
           <li>
-            <a href="#">Testimonios</a>
+            <a href="#testimonials">Testimonios</a>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a href="#contact">Contacto</a>
+          </li>
+          <li>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
       </nav>

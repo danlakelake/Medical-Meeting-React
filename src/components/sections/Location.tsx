@@ -61,7 +61,7 @@ function Location() {
   }, []);
 
   return (
-    <section>
+    <section id="location">
       <div ref={mapRef} className="h-96"></div>
     </section>
   );

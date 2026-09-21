@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Footer from './components/Footer';
 import {Hero, About, Specialties, Testimonials, Location, Contact} from "./components/sections";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Testimonials/>
     <Location/>
     <Contact/>
+    <Footer/>
     </>
   )
 }
