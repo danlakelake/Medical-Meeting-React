@@ -47,21 +47,21 @@ function Location() {
         map,
         position: location,
         content: pin,
-        gmpClickable: true
+        gmpClickable: true,
       });
 
       marker.addEventListener('gmp-click', () => {
         infoWindow.open({
-            map,
-            anchor: marker
+          map,
+          anchor: marker,
         });
-      })
+      });
     }
     loadMap();
   }, []);
 
   return (
-    <section id="location">
+    <section id="location" className="scroll-mt-20">
       <div ref={mapRef} className="h-96"></div>
     </section>
   );

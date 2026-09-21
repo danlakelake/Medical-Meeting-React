@@ -39,7 +39,7 @@ function Specialties() {
       : specialties.filter((specialty) => specialty.name === selectedCategory);
 
   return (
-    <section id="specialties" className="section-padding bg-blue-sections">
+    <section id="specialties" className="section-padding bg-blue-sections scroll-mt-20">
       <div className="section-container">
         {/* Encabezado */}
         <div>

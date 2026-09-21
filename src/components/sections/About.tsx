@@ -2,7 +2,7 @@ import aboutDoctor from '../../assets/about-doctor.avif';
 
 function About() {
   return (
-    <section id="about" className="section-padding-secondary">
+    <section id="about" className="section-padding-secondary scroll-mt-15">
       <div className="section-container-secondary">
         {/* Imagen */}
         <div className="w-full md:w-1/2 mb-10 md:mb-0">

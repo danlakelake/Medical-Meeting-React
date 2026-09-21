@@ -14,6 +14,10 @@
 }
 
 /* Defaults */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,7 +30,8 @@ body {
 .btn-primary,
 .btn-secondary,
 .btn-tertiary {
-  @apply py-2
+  @apply inline-block
+  py-2
   border
   border-primary
   rounded 
@@ -38,8 +43,8 @@ body {
   overflow-hidden;
 }
 
-.btn-tertiary{
-   @apply border-white! text-white!
+.btn-tertiary {
+  @apply border-white! text-white!;
 }
 
 .btn-primary,
@@ -47,7 +52,7 @@ body {
   @apply px-15;
 }
 
-.btn-secondary{
+.btn-secondary {
   @apply px-10;
 }
 
@@ -65,7 +70,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.btn-tertiary::before{
+.btn-tertiary::before {
   @apply bg-white!;
 }
 
@@ -80,7 +85,7 @@ body {
   @apply text-white;
 }
 
-.btn-tertiary:hover span{
+.btn-tertiary:hover span {
   @apply text-fluorescent-blue!;
 }
 

@@ -47,7 +47,7 @@ function Testimonial() {
   }
 
   return (
-    <section id="testimonials" className="section-padding">
+    <section id="testimonials" className="section-padding scroll-mt-20">
       <div className="section-container">
         <div className="testimonial-container">
           <div className="animate-testimonial" key={currentTestimonial}>

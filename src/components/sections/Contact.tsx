@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section id="contact" className="bg-fluorescent-blue">
+    <section id="contact" className="bg-fluorescent-blue scroll-mt-20">
       <div className="section-container flex flex-col items-center text-center py-15 md:py-20 px-10 md:px-0">
         <h2 className="section-title text-white">Contáctanos</h2>
         <div className="section-title-line-secondary"></div>
@@ -11,9 +11,9 @@ function Contact() {
         <p className="text-white text-xl font-bold mt-4">
           info@medicalmeeting.com
         </p>
-        <button className="btn-tertiary mt-12 px-35!">
+        <a href="mailto:contacto@medicalmeeting.com" className="btn-tertiary mt-12 px-35!">
           <span className="relative z-10">Contáctanos</span>
-        </button>
+        </a>
       </div>
     </section>
   );
