@@ -7,6 +7,7 @@
   --color-secondary: #00bcff;
   --color-tertiary: #8ec5ff;
   --color-light: #51a2ff;
+  --color-fluorescent-blue: #337bff;
   --color-blue-sections: #c2dfff;
   --color-gray-brands: #99a1af;
   --color-gray-texts: #7d8591;
@@ -23,7 +24,8 @@ body {
 
 /* Default Buttons */
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-tertiary {
   @apply py-2
   border
   border-primary
@@ -36,11 +38,16 @@ body {
   overflow-hidden;
 }
 
-.btn-primary {
+.btn-tertiary{
+   @apply border-white! text-white!
+}
+
+.btn-primary,
+.btn-tertiary {
   @apply px-15;
 }
 
-.btn-secondary {
+.btn-secondary{
   @apply px-10;
 }
 
@@ -50,21 +57,31 @@ body {
 }
 
 .btn-primary::before,
-.btn-secondary::before {
+.btn-secondary::before,
+.btn-tertiary::before {
   content: '';
   @apply absolute inset-y-0 left-0 w-full bg-tertiary;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
 }
 
+.btn-tertiary::before{
+  @apply bg-white!;
+}
+
 .btn-primary:hover::before,
-.btn-secondary:hover::before {
+.btn-secondary:hover::before,
+.btn-tertiary:hover::before {
   transform: translateX(0);
 }
 
 .btn-primary:hover span,
 .btn-secondary:hover span {
   @apply text-white;
+}
+
+.btn-tertiary:hover span{
+  @apply text-fluorescent-blue!;
 }
 
 /* Navbar */
@@ -150,13 +167,23 @@ nav ul li:hover {
   transform: translateY(-50%);
 }
 
+.section-title-line-secondary {
+  @apply relative w-40 h-0.5 bg-white mb-5;
+}
+
+.section-title-line-secondary::before {
+  content: '';
+  @apply absolute left-1/2 top-1/2 w-2 h-2 rounded-full bg-white;
+  transform: translate(-50%, -50%);
+}
+
 .section-paragraph {
   @apply text-base text-gray-texts text-justify;
 }
 
 /* Gallery Grid */
 .grid-images {
-  @apply w-full h-60 rounded-sm object-cover;
+  @apply w-full h-full rounded-md object-cover;
 }
 
 /* Testimonials */

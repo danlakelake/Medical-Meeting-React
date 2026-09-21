@@ -1,32 +1,42 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
 import testimonialDr1 from '../../assets/testimonials/testimonial-1.avif';
 import testimonialDr2 from '../../assets/testimonials/testimonial-2.avif';
 import testimonialDr3 from '../../assets/testimonials/testimonial-3.avif';
 
+const testimonials = [
+  {
+    name: 'Fanny Spencer',
+    image: testimonialDr1,
+    rating: 5,
+    text: 'Como profesionales de la salud, debemos estar siempre comprometidos con nuestros pacientes y brindarles la mejor atención posible.',
+  },
+  {
+    name: 'Sarah Williams',
+    image: testimonialDr2,
+    rating: 5,
+    text: 'Encontrar profesionales confiables es fundamental para recibir una atención médica de calidad.',
+  },
+  {
+    name: 'Michael Anderson',
+    image: testimonialDr3,
+    rating: 5,
+    text: 'La experiencia y el compromiso de nuestros especialistas hacen la diferencia para nuestros pacientes.',
+  },
+];
+
 function Testimonial() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  const testimonials = [
-    {
-      name: 'Fanny Spencer',
-      image: testimonialDr1,
-      rating: 5,
-      text: 'Como profesionales de la salud, debemos estar siempre comprometidos con nuestros pacientes y brindarles la mejor atención posible.',
-    },
-    {
-      name: 'Sarah Williams',
-      image: testimonialDr2,
-      rating: 5,
-      text: 'Encontrar profesionales confiables es fundamental para recibir una atención médica de calidad.',
-    },
-    {
-      name: 'Michael Anderson',
-      image: testimonialDr3,
-      rating: 5,
-      text: 'La experiencia y el compromiso de nuestros especialistas hacen la diferencia para nuestros pacientes.',
-    },
-  ];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((current) =>
+        current === testimonials.length - 1 ? 0 : current + 1,
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const testimonial = testimonials[currentTestimonial];
 
@@ -48,7 +58,7 @@ function Testimonial() {
             />
             <h3>{testimonial.name}</h3>
             <div className="flex gap-1 mt-2 text-yellow-400">
-             {renderStars(testimonial.rating)}
+              {renderStars(testimonial.rating)}
             </div>
             <p className="section-paragraph max-w-xl mt-5 text-center!">
               {testimonial.text}

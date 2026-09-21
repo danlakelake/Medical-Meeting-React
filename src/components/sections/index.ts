@@ -3,3 +3,4 @@ export { default as About } from './About';
 export { default as Specialties } from './Specialties';
 export { default as Testimonials } from './Testimonials';
 export { default as Location } from './Location';
+export { default as Contact } from './Contact';
