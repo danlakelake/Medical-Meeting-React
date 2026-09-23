@@ -1,10 +1,45 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../assets/medical-meeting-logo.svg';
 import { Menu, X } from 'lucide-react';
 import { siGithub } from 'simple-icons';
 
+const sections = [
+  { id: 'home', label: null },
+  { id: 'about', label: 'Quienes Somos' },
+  { id: 'specialties', label: 'Especialidades' },
+  { id: 'testimonials', label: 'Testimonios' },
+  { id: 'location', label: 'Ubicación' },
+  { id: 'contact', label: 'Contacto' },
+];
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
+
+  useEffect(() => {
+    const sectionElements = sections
+      .map((section) => document.getElementById(section.id))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: '-20% 0px -60% 0px',
+      },
+    );
+
+    sectionElements.forEach((section) => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+  }, []);
 
   return (
     <header className="sticky top-0 z-20 bg-white">
@@ -42,21 +77,20 @@ function Header() {
             isMenuOpen ? 'max-h-96 opacity-100 mt-8' : 'max-h-0 opacity-0 mt-0'
           } md:max-h-none md:opacity-100 md:overflow-visible md:mt-5`}
         >
-          <li>
-            <a href="#about">Quienes Somos</a>
-          </li>
-          <li>
-            <a href="#specialties">Especialidades</a>
-          </li>
-          <li>
-            <a href="#testimonials">Testimonios</a>
-          </li>
-          <li>
-            <a href="#location">Ubicación</a>
-          </li>
-          <li>
-            <a href="#contact">Contacto</a>
-          </li>
+          {sections.map((section) => (
+            <li key={section.id}>
+              <a
+                href={`#${section.id}`}
+                className={
+                  activeSection === section.id
+                    ? 'text-secondary'
+                    : 'text-primary'
+                }
+              >
+                {section.label}
+              </a>
+            </li>
+          ))}
           <li>
             <a
               href="https://github.com/danlakelake/Medical-Meeting-React"

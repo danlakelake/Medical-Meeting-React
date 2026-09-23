@@ -18,7 +18,7 @@ function Footer() {
           <a
             href="#"
             aria-label="Facebook"
-              className="inline-block text-gray-brands opacity-45 hover:scale-130 hover:-rotate-20 transition-transform duration-200"
+              className="inline-block text-gray-brands opacity-45 hover:scale-130 transition-transform duration-200"
           >
             <svg
               viewBox="0 0 24 24"
