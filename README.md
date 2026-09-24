@@ -6,7 +6,7 @@ Responsive Medical landing page built with React, TypeScript and Tailwind CSS.
 
 [Live Demo](https://medical-network.netlify.app/)
 
-## 📸 Preview
+## 📸 Preview (Reference)
 
 [Medical Network Preview (Reference)](https://www.behance.net/gallery/92067579/Medical-Meeting)
 
