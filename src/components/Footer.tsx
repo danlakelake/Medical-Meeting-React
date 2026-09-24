@@ -11,7 +11,7 @@ function Footer() {
             alt="Medical Meeting"
             className="w-10 h-10 mb-2 mx-auto"
           />
-          <span>Medical Meeting</span>
+          <span>Medical Network</span>
         </a>
         <div className="mt-10 text-center">
           <p className="mt-4 text-xl font-bold mb-3">Síguenos</p>
@@ -29,7 +29,7 @@ function Footer() {
             </svg>
           </a>
           <p className="mt-5 md:mt-10 text-sm text-gray-brands">
-            ©2026 Medical Meeting. Todos los derechos reservados.
+            ©2026 Medical Network. Todos los derechos reservados.
           </p>
         </div>
       </div>

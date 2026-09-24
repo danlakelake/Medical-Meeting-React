@@ -36,7 +36,7 @@ function Location() {
       const infoWindow = new InfoWindow({
         content: `
         <div>
-            <h3>Medical Meeting</h3>
+            <h3>Medical Network</h3>
             <p>Centro Médico Especializado</p>
             <p>San José del Cabo, B.C.S.</p>
         </div>

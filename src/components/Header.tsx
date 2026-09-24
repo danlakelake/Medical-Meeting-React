@@ -46,7 +46,7 @@ function Header() {
       <nav className="section-padding-secondary flex flex-wrap items-center justify-between p-8 shadow-lg">
         <a href="#" className="flex items-center gap-3 text-primary">
           <img src={logo} alt="Medical Meeting" className="w-10 h-10" />
-          <span>Medical Meeting</span>
+          <span>Medical Network</span>
         </a>
         <button
           className="md:hidden text-primary cursor-pointer"

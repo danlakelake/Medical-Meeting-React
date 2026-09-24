@@ -19,7 +19,7 @@ function About() {
             <div className="mt-2 space-y-6">
               <div className="section-title-line"></div>
               <p className="section-paragraph">
-                Medical Meeting es una red que conecta a pacientes con médicos y
+                Medical Network es una red que conecta a pacientes con médicos y
                 especialistas reconocidos, facilitando el acceso a información
                 profesional y servicios de salud de confianza. Nuestro objetivo
                 es crear un espacio donde la experiencia, preparación y

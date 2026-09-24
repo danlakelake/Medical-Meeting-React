@@ -9,9 +9,9 @@ function Contact() {
           información de calidad. Contáctanos, estamos para ayudarte.
         </p>
         <p className="text-white text-xl font-bold mt-4">
-          info@medicalmeeting.com
+          info@medicalnetwork.com
         </p>
-        <a href="mailto:contacto@medicalmeeting.com" className="btn-tertiary mt-12 px-35!">
+        <a href="mailto:contacto@medicalnetwork.com" className="btn-tertiary mt-12 px-35!">
           <span className="relative z-10">Contáctanos</span>
         </a>
       </div>
