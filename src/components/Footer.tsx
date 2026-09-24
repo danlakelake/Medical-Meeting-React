@@ -8,7 +8,7 @@ function Footer() {
         <a href="#" className="text-primary">
           <img
             src={logo}
-            alt="Medical Meeting"
+            alt="Medical Network"
             className="w-10 h-10 mb-2 mx-auto"
           />
           <span>Medical Network</span>

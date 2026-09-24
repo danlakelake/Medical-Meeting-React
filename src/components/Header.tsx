@@ -45,7 +45,7 @@ function Header() {
     <header className="sticky top-0 z-20 bg-white">
       <nav className="section-padding-secondary flex flex-wrap items-center justify-between p-8 shadow-lg">
         <a href="#" className="flex items-center gap-3 text-primary">
-          <img src={logo} alt="Medical Meeting" className="w-10 h-10" />
+          <img src={logo} alt="Medical Network" className="w-10 h-10" />
           <span>Medical Network</span>
         </a>
         <button
@@ -93,7 +93,7 @@ function Header() {
           ))}
           <li>
             <a
-              href="https://github.com/danlakelake/Medical-Meeting-React"
+              href="https://github.com/danlakelake/Medical-Network-React"
               target="_blank"
               rel="noopener noreferrer"
             >
