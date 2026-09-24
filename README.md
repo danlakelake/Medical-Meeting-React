@@ -2,13 +2,13 @@
 
 Responsive medical landing page built with React, TypeScript and Tailwind CSS.
 
-## 🚀 Demo
+## 🚀 Live Demo
 
-[Live Demo](https://...)
+[Live Demo](https://medical-meeting.netlify.app/)
 
 ## 📸 Preview
 
-![Medical Meeting Preview](...)
+[Medical Meeting Preview](https://www.behance.net/gallery/92067579/Medical-Meeting)
 
 ## 🛠️ Built With
 
