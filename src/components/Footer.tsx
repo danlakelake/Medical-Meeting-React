@@ -1,5 +1,5 @@
 import { siFacebook } from 'simple-icons';
-import logo from '../assets/medical-meeting-logo.svg';
+import logo from '../assets/medical-network-logo.svg';
 
 function Footer() {
   return (

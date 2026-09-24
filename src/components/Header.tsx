@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import logo from '../assets/medical-meeting-logo.svg';
+import logo from '../assets/medical-network-logo.svg';
 import { Menu, X } from 'lucide-react';
 import { siGithub } from 'simple-icons';
 
