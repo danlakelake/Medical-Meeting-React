@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { setOptions, importLibrary } from '@googlemaps/js-api-loader';
+import Logo from '../../assets/medical-network-logo.svg';
 
 const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
@@ -36,6 +37,7 @@ function Location() {
       const infoWindow = new InfoWindow({
         content: `
         <div>
+            <img src="${Logo}" alt="Medical Network" style="width: 30px; height: auto; margin-bottom:5px;" />
             <h3>Medical Network</h3>
             <p>Centro Médico Especializado</p>
             <p>San José del Cabo, B.C.S.</p>
