@@ -5,7 +5,7 @@ function Contact() {
         <h2 className="section-title text-white">Contáctanos</h2>
         <div className="section-title-line-secondary"></div>
         <p className="section-paragraph text-white! text-center!">
-          En Medical Meeting estamos comprometidos con brindar atención e
+          En Medical Network estamos comprometidos con brindar atención e
           información de calidad. Contáctanos, estamos para ayudarte.
         </p>
         <p className="text-white text-xl font-bold mt-4">
