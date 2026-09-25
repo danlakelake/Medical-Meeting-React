@@ -133,6 +133,17 @@ nav ul li:hover {
   drop-shadow-2xl;
 }
 
+/* Brands */
+@keyframes brands-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* Sections */
 .section-padding {
   @apply px-10 md:px-20 py-20;
