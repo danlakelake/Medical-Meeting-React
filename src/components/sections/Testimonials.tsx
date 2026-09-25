@@ -78,7 +78,7 @@ function Testimonial() {
             />
             <div className="w-20 h-1 bg-gray-200">
               <div
-                className="h-full bg-primary transition-all duration-500"
+                className="h-full bg-primary transition-all duration-400"
                 style={{
                   width: `${((currentTestimonial + 1) / testimonials.length) * 100}%`,
                 }}
